@@ -1,6 +1,22 @@
-.box{
-  width: 400px;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  height: 400px;
-  background-color: crimson;
+.box1, .box2, .box3 {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  margin: 20px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  height: 100%;
+  width: 100%;
 }
