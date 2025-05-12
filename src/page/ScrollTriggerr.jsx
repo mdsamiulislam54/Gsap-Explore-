@@ -26,7 +26,7 @@ useEffect(()=>{
         scrollTrigger:{
             trigger:box2.current,
             markers: true,
-            start: "top 50%",
+            start: "top 100%",
              
             
         }
@@ -37,7 +37,7 @@ useEffect(()=>{
         delay:1,
          scrollTrigger:{
             trigger:box3.current,
-            markers: true,
+        
             scrub: 1, 
             
         }
@@ -50,9 +50,10 @@ useEffect(()=>{
         delay:1,
         scrollTrigger:{
             trigger:text.current,
-            start: "top 50%", 
+            start: "top 100%", 
+            scroller:'body',
             markers:true,
-              
+            scrub:1
         }
 
     })
