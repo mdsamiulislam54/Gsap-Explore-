@@ -61,6 +61,8 @@ useEffect(()=>{
   return (
     <div>
         <div className='h-screen flex justify-center items-center bg-blue-300'>
+
+            
             <div ref={box1} className=" w-50 h-50 bg-red-500 "></div>
         </div>
         <div ref={textContainer} className='h-screen flex flex-col  justify-center items-center bg-blue-500 overflow-x-hidden'>
