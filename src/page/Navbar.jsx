@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, } from "react";
 import { RiMenu2Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import gsap from "gsap";
 const Navbar = () => {
-  const [liitem, setLiItem] = useState([]);
+
   const mMenu = useRef();
   const mMenuBtn = useRef();
   const item = useRef();
@@ -11,18 +11,18 @@ const Navbar = () => {
 
   useEffect(() => {
     const liItems = item.current.childNodes;
-    setLiItem(liItems);
+   
     tl.current.to(mMenu.current, {
       right: 0,
       duration: 0.5,
     });
     tl.current.from(liItems, {
-      //   opacity: 0,
-      //   x: 150,
-      //   stagger: 0.3,
-      //   duration: 0.3,
+        opacity: 0,
+        x: 150,
+        stagger: 0.3,
+        duration: 0.3,
 
-      
+
       //      opacity: 0,
       //   scale: 0.5,
       //   y: 50,
