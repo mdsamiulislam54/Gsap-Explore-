@@ -25,6 +25,9 @@ body{
 }
 
 /* orang page */
+html {
+  scroll-behavior: smooth;
+}
 
 .banner .fanta{
   position: absolute;
