@@ -23,3 +23,42 @@ body{
 .rsponsiveMenu{
   right: -500px;
 }
+
+/* orang page */
+
+.banner .fanta{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+.banner .lemon{
+  position: absolute;
+  top: 75%;
+  left: 57%;
+  width: 20%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+.banner .lemon-cut{
+  position: absolute;
+  top: 23%;
+  right: 43%;
+  width: 15%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.banner h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.leaf-2{
+  width: 27%;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
