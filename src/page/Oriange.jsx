@@ -11,6 +11,7 @@ const Oriange = () => {
   const leaf1 = useRef();
   const orang = useRef();
   const container = useRef()
+  const card = useRef()
  useEffect(() => {
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -18,7 +19,7 @@ const Oriange = () => {
       start: "top 0%",
       end: "bottom 25%",
        scrub: 1,
-      markers: true
+    //   markers: true
     }
   });
 
@@ -42,6 +43,25 @@ const Oriange = () => {
     x: 1150,
     ease: "power1.inOut"
   }, "<");
+
+  const tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: card.current,
+      start: "top 0%",
+      end: "bottom 25%",
+       scrub: 1,
+      markers: true
+    }
+  });
+
+  tl2.to(fanta.current,{
+     y: 1320,
+     width:"18%",
+     zIndex:"5",
+    x: 0,
+    ease: "power1.inOut"
+  })
+
 
 }, []);
 
@@ -94,7 +114,7 @@ const Oriange = () => {
           alt=""
         />
       </div>
-      <div className="min-h-screen w-full bg-amber-800">
+      <div ref={card} className="min-h-screen w-full bg-amber-800">
         <div className="flex justify-between items-center w-10/12 mx-auto py-10 ">
           <div className="w-4/12 flex justify-center items-center mt-[60vh]">
             <svg
@@ -128,7 +148,7 @@ const Oriange = () => {
           </div>
         </div>
       </div>
-      <div className="min-h-screen bg-orange-400 ">
+      <div  className="min-h-screen bg-orange-400 ">
         <div className="flex justify-between items-center gap-4 pt-24 w-10/12 mx-auto">
           <div className="relative z-20 bg-white py-5 flex justify-center w-3/12 h-[300px]">
             <img
@@ -142,9 +162,9 @@ const Oriange = () => {
               alt=""
             />
           </div>
-          <div className="relative z-10 bg-white py-5 flex justify-center  w-3/12 h-[300px] ">
+          <div className="relative -z-0 bg-white py-5 flex justify-center  w-3/12 h-[300px] ">
             <img
-              className="lemon-cut-card w-[50%] absolute -top-14 left-[24%] -z-1"
+              className="lemon-cut-card w-[50%] absolute -top-14 left-[24%] z-3"
               src="https://cdn.pixabay.com/photo/2016/03/03/17/15/fruit-1234657_640.png"
               alt=""
             />
