@@ -65,3 +65,9 @@ html {
   top: 10px;
   right: 0;
 }
+
+/*  */
+
+.wheelContainer{
+  transform: translateX(-100%);
+}

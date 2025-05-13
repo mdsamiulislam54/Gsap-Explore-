@@ -7,6 +7,7 @@ import CuserAnimation from './page/CuserAnimation'
 import Navbar from './page/Navbar'
 import TextAnimation from './page/TextAnimation'
 import Oriange from './page/Oriange'
+import ScrollTextAnimation from './page/ScrollTextAnimation'
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
         {/* <CuserAnimation/> */}
         {/* <Navbar/> */}
         {/* <TextAnimation/> */}
-        <Oriange/>
+        {/* <Oriange/> */}
+        <ScrollTextAnimation/>
     </div>
   )
 }
